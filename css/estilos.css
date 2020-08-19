@@ -1,0 +1,138 @@
+:root{
+    --primary-color: hsl(257, 40%, 49%);
+}
+
+body, html, figure{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url('../images/bg-desktop.svg');
+    background-color: var(--primary-color);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    padding: 45px 70px 25px;
+}
+
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 39px;
+    margin: 0;
+    margin-bottom: 31px;
+}
+
+
+.header{
+    margin-bottom: 55px;
+}
+
+.main img{
+    width: 100%;
+}
+
+.main{
+    display: flex;
+}
+
+.main .main-description{
+    padding: 36px 10px 0 62px;
+    color: white;
+}
+
+.main p{
+    margin-bottom: 48px;
+}
+
+.main-link{
+    text-decoration: none;
+    color: var(--primary-color);
+    background: white;
+    border-radius: 50px;
+    padding: 17px 64px;
+    font-size: 19px;
+    box-shadow: 10px 10px 28px -16px rgba(0,0,0,1);
+}
+
+.footer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.menu-social a{
+    border: 2px solid white;
+    border-radius: 50%;
+    color: white;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+}
+
+.menu-social a + a{
+    margin-left: 5px;
+}
+.fab{
+    padding: 11px;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-image: url('../images/bg-mobile.svg');
+        padding: 35px 38px 25px;
+    }
+
+    .header img{
+        width: 45%;
+    }
+
+    .main{
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 55px;
+    }
+
+    .main img{
+        margin-bottom: 55px;
+    }
+
+    .main .main-description{
+        padding: 0;
+    }
+
+    h1{
+        font-size: 22px;
+        margin-bottom: 24px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+    .main p{
+        margin-bottom: 36px;
+    }
+
+    .main-link{
+        font-size: 14px;
+        padding: 12px 74px;
+    }
+
+    .footer{
+        justify-content: center;
+    }
+
+    .menu-social a{
+        width: 30px;
+        height: 30px;
+    }
+
+    .fab{
+        padding: 6px;
+        font-size: 12px;
+    }
+  }
